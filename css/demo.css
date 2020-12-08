@@ -59,23 +59,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-body.dark-theme {
-	--text-color: #CECECE;
-	--bkg-color: #2A2B30;
-  }
-
-  @media (prefers-color-scheme: dark) {
-	defaults to dark theme 
-   body {
-	 --text-color: #CECECE;
-	 --bkg-color: #2A2B30;
-   }
-   body.light-theme {
-	 --text-color: #2A2B30;
-	 --bkg-color: #CECECE;
-   }
- }
-
 a {
 	text-decoration: none;
 	color: #f0f0f0;
@@ -224,7 +207,7 @@ a:hover {
 	content: '\e004';
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 20em) {
 	.bp-header h1 {
 		font-size: 1.8em;
 	}

@@ -20,6 +20,9 @@ button{
     display:inline-block;
     text-decoration: none;
   }
+  a:active {
+    color: #5C5EDC;
+  }
   
   .link{
     color: inherit;
@@ -259,14 +262,14 @@ button{
             transition-duration: 1s;
   }
   
-  .hamburger__button:before, .hamburger__button:after{
+  a, .hamburger__button:before, .hamburger__button:after{
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
     transition-property: transform;
     transition-property: transform, -webkit-transform;
   }
   
-  .hamburger__button:before, .hamburger__button:after, .hamburger__label{
+  a, .hamburger__button:before, .hamburger__button:after, .hamburger__label{
     -webkit-transition-timing-function: ease;
             transition-timing-function: ease;
     -webkit-transition-duration: .15s;
@@ -311,9 +314,9 @@ button{
     --colorBlack: #222;
     --colorWhite: #fff;
     --colorGray: #f0f0f0;
-    --colorMain: #4557bb;
-    --colorMainLight: #8491d8;
-    --colorMainDark: #233286;
+    --colorMain: #5C5EDC;
+    --colorMainLight: #a8a9ea;
+    --colorMainDark: #2125de;
   }
   
   a{

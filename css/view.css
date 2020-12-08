@@ -64,7 +64,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 1;
-  font-size: 2rem;
+  font-size: 5rem;
   text-align: center;
   color: #fff;
   opacity: 0;
@@ -97,6 +97,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 300;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
 }

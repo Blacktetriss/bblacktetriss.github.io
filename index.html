@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
 		<!-- Modernizr is used for flexbox fallback -->
 		<script src="js/modernizr.custom.js"></script>
         <script src="sw.js"></script>
@@ -29,7 +30,6 @@
 				<h1>Product Comparison Layout &amp; Effect</h1>
 				<nav>
 					<a href="http://tympanus.net/Blueprints/GridGallery/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
-					<!--a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
 					<a href="http://tympanus.net/codrops/?p=24096" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
 					<a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
 				</nav>
@@ -41,7 +41,7 @@
 					<div class="product__info">
 						<a href="cardproduct.html">
 						<img class="product__image" src="images/tumblr_1.jpg" alt="Product 1" /></a>
-						<h3 class="product__title">Chryseia</h3>
+						<h3 class="product__title">Card Card</h3>
 						<span class="product__year extra highlight">2011</span>
 						<span class="product__region extra highlight">Douro</span>
 						<span class="product__varietal extra highlight">Touriga Nacional</span>
@@ -55,7 +55,7 @@
 					<div class="product__info">
 						<a href="view.html">
 						<img class="product__image" src="images/tumblr_2.jpg" alt="Product 2" /></a>
-						<h3 class="product__title">Meiomi Pinot Noir</h3>
+						<h3 class="product__title">View</h3>
 						<span class="product__year extra highlight">2013</span>
 						<span class="product__region extra highlight">California</span>
 						<span class="product__varietal extra highlight">Pinot Noir</span>
@@ -69,7 +69,7 @@
 					<div class="product__info">
 						<a href="email1.html">
 						<img class="product__image" src="images/tumblr_3.jpg" alt="Product 3" /></a>
-						<h3 class="product__title">Antucura Cabernet Sauvignon</h3>
+						<h3 class="product__title">Cup</h3>
 						<span class="product__year extra highlight">2013</span>
 						<span class="product__region extra highlight">Argentina</span>
 						<span class="product__varietal extra highlight">Cabernet Sauvignon </span>
@@ -83,7 +83,7 @@
 					<div class="product__info">
 						<a href="menu.html">
 						<img class="product__image" src="images/tumblr_4.jpg" alt="Product 4" /></a>
-						<h3 class="product__title">Leonetti Sangiovese</h3>
+						<h3 class="product__title">Menu</h3>
 						<span class="product__year extra highlight">2012</span>
 						<span class="product__region extra highlight">Washington</span>
 						<span class="product__varietal extra highlight">Sangiovese</span>
@@ -160,7 +160,7 @@
 				</div>
 				<div class="product">
 					<div class="product__info">
-						<img class="product__image" src="images/tumblr_10.jpg" alt="Product 10" />
+						<img class="product__image" src="images/tumblr_6.jpg" alt="Product 10" />
 						<h3 class="product__title">Montevertine Le Pergole Torte</h3>
 						<span class="product__year extra highlight">2011</span>
 						<span class="product__region extra highlight">Tuscany</span>
@@ -173,7 +173,7 @@
 				</div>
 				<div class="product">
 					<div class="product__info">
-						<img class="product__image" src="images/lining.jpg" alt="Product 11" />
+						<img class="product__image" src="images/tumblr_2.jpg" alt="Product 11" />
 						<h3 class="product__title">Massolino Vigna Parussi Barolo</h3>
 						<span class="product__year extra highlight">2009</span>
 						<span class="product__region extra highlight">Piedmont</span>
@@ -186,7 +186,7 @@
 				</div>
 				<div class="product">
 					<div class="product__info">
-						<img class="product__image" src="images/lining.jpg" alt="Product 12" />
+						<img class="product__image" src="images/tumblr_10.jpg" alt="Product 12" />
 						<h3 class="product__title">Chateau Branaire-Ducru</h3>
 						<span class="product__year extra highlight">2009</span>
 						<span class="product__region extra highlight">St-Julien, Bordeaux</span>
@@ -198,14 +198,43 @@
 					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
 				</div>
 			</section>
-			<button class="btn-toggle">Toggle Dark-Mode</button>
 		</div><!-- /view -->
 		<!-- product compare wrapper -->
 		<section class="compare">
 			<button class="action action--close"><i class="fa fa-remove"></i><span class="action__text action__text--invisible">Close comparison overlay</span></button>
 		</section>
-		<script src="js/theme.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/main.js"></script>
+        
+<header class="header">
+  <div class="hamburger">
+    <button class="button hamburger__button js-menu__toggle">
+      <span class="hamburger__label">Open menu</span>
+    </button>
+  </div>
+  <nav class="menu">
+    <ul class="list menu__list">
+      <li class="menu__group">
+        <a href="index.html" class= "link menu__link">Home</a>
+      </li>
+      <li class="menu__group">
+        <a href="view.html" class="link menu__link">About me</a>
+      </li>
+      <li class="menu__group">
+        <a href="email1.html" class="link menu__link">Services</a>
+      </li>
+      <li class="menu__group">
+        <a href="#0" class="link menu__link">Portfolio</a>
+      </li>
+      <li class="menu__group">
+        <a href="#0" class="link menu__link">Blog</a>
+      </li>
+      <li class="menu__group">
+        <a href="#0" class="link menu__link">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+    <script  src="js/menu.js"></script>
+</header> 
 	</body>
 </html>
