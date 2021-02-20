@@ -1,12 +1,12 @@
-var isScrollSnapSupported = 'scrollSnapType' in document.documentElement.style ||
-        'webkitScrollSnapType' in document.documentElement.style;
+const button = document.getElementById('hello-url');
 
-if (!isScrollSnapSupported) {
-  var elem = document.createElement('p'),
-      txt  = document.createTextNode('Your browser does not support CSS Scroll Snap Points :( '),
-      local = document.body;
-  
-  elem.appendChild(txt);
-  elem.classList.add('warning');
-  local.insertBefore(elem, local.firstChild);
-}
+button.addEventListener('click', () => {
+  const h1 = document.createElement('h1');
+  h1.textContent = 'Hello 1488 World!';
+  document.body.appendChild(h1);
+});
+
+const {calculateHash} = require('./lib/calculateHash');
+
+module.exports = {calculateHash};
+
