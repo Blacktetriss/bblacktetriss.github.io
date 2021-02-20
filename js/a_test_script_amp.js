@@ -1,13 +1,9 @@
-var isScrollSnapSupported = 'scrollSnapType' in document.documentElement.style ||
-        'webkitScrollSnapType' in document.documentElement.style;
+const para = document.querySelector('p');
 
-if (!isScrollSnapSupported) {
-  var elem = document.createElement('p'),
-      txt  = document.createTextNode('Your browser does not support CSS Scroll Snap Points :( '),
-      local = document.body;
-  
-  elem.appendChild(txt);
-  elem.classList.add('warning');
-  local.insertBefore(elem, local.firstChild);
+para.addEventListener('click', updateName);
+
+function updateName() {
+  let name = prompt('Enter a new name');
+  para.textContent = 'Player 1: ' + name;
 }
 
