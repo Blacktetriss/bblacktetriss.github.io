@@ -1,9 +1,13 @@
-const para = document.querySelector('p');
+function myFunction() {
+    var x, text;
 
-para.addEventListener('click', updateName);
+    x = document.getElementById("numb").value;
 
-function updateName() {
-  let name = prompt('Enter a new name');
-  para.textContent = 'Player 1: ' + name;
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
 }
 
